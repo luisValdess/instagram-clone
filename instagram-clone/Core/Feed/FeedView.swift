@@ -23,7 +23,7 @@ struct FeedView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Image("instagram-text")
+                    Image("instagram-logo")
                         .resizable()
                         .frame(width: 100, height: 32)
                 }
