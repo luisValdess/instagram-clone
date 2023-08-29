@@ -9,8 +9,7 @@ import SwiftUI
 
 struct CreatePasswordView: View {
     
-    @State private var password = ""
-    @State private var password2 = ""
+    @EnvironmentObject var viewModel: RegistrationViewModel
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -27,14 +26,10 @@ struct CreatePasswordView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Password", text: $password)
+            TextField("Password", text: $viewModel.password)
                 .textInputAutocapitalization(.never)
                 .modifier(IGTextFieldModifier())
                 .padding(.top)
-            
-            TextField("Password", text: $password)
-                .textInputAutocapitalization(.never)
-                .modifier(IGTextFieldModifier())
             
             NavigationLink(destination: {
                 CompleteSignUpView()
