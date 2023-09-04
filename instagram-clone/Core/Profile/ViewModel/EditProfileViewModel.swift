@@ -11,12 +11,19 @@ import Firebase
 
 @MainActor
 class EditProfileViewModel: ObservableObject {
-
-    @Published var fullname = ""
-    @Published var bio = ""
-    @Published var profileImage: Image?
+    
+    @Published var user: User
+    
     @Published var selectedImage: PhotosPickerItem? {
         didSet { Task { await loadImage(fromItem: selectedImage) } }
+    }
+    @Published var profileImage: Image?
+    
+    @Published var fullname = ""
+    @Published var bio = ""
+    
+    init(user: User) {
+        self.user = user
     }
     
     func loadImage(fromItem item: PhotosPickerItem?) async {
@@ -25,5 +32,25 @@ class EditProfileViewModel: ObservableObject {
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
         guard let uiImage = UIImage(data: data) else { return }
         self.profileImage = Image(uiImage: uiImage)
+    }
+    
+    func updateUserData() async throws {
+        // update profile image if change
+        
+        var data = [String: Any]()
+        
+        //update name if change
+        if !fullname.isEmpty && user.fullname != fullname {
+            data["fullname"] = fullname
+        }
+        
+        //update bio if change
+        if !bio.isEmpty && user.bio != bio {
+            data["bio"] = bio
+        }
+        
+        if !data.isEmpty {
+            try await Firestore.firestore().collection("users").document(user.id).updateData(data)
+        }
     }
 }

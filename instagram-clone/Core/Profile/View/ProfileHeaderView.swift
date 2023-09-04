@@ -18,7 +18,7 @@ struct ProfileHeaderView: View {
             
             // Pic and Stats
             HStack {
-                Image("profile")
+                Image(user.profileUserURL ?? "profile")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 80, height: 80)
@@ -38,11 +38,11 @@ struct ProfileHeaderView: View {
             
             // Name and Bio
             VStack(alignment: .leading, spacing: 4) {
-                Text("maus__hous")
+                Text(user.fullname ?? "")
                     .font(.footnote)
                     .fontWeight(.semibold)
                 
-                Text("Visual artist and ilustrator")
+                Text(user.bio ?? "")
                     .font(.footnote)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -73,7 +73,7 @@ struct ProfileHeaderView: View {
             
         }
         .fullScreenCover(isPresented: $showEditProfile) {
-            EditProfileView()
+            EditProfileView(user: user)
         }
     }
 }
