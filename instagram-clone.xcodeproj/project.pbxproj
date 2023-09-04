@@ -43,6 +43,7 @@
 		A0CF03B02A81AA4B000216FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF03AF2A81AA4B000216FE /* ContentView.swift */; };
 		A0CF03B22A81AA4C000216FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CF03B12A81AA4C000216FE /* Assets.xcassets */; };
 		A0CF03B52A81AA4C000216FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CF03B42A81AA4C000216FE /* Preview Assets.xcassets */; };
+		A0F253092AA6181D00E0FEF1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253082AA6181D00E0FEF1 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		A0CF03AF2A81AA4B000216FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0CF03B12A81AA4C000216FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0CF03B42A81AA4C000216FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0F253082AA6181D00E0FEF1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				A06AAD882A9FFB5600D60228 /* UserService.swift */,
+				A0F253082AA6181D00E0FEF1 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				A03EC76A2A915C0300ED1018 /* ContentViewModel.swift in Sources */,
 				A06AAD8F2AA03C4800D60228 /* EditProfileView.swift in Sources */,
 				A03EC76D2A91895E00ED1018 /* RegistrationViewModel.swift in Sources */,
+				A0F253092AA6181D00E0FEF1 /* ImageUploader.swift in Sources */,
 				A08AD80D2A832258002AA822 /* SearchView.swift in Sources */,
 				A08AD8232A8734F8002AA822 /* ProfileHeaderView.swift in Sources */,
 				A06AAD872A9EA56E00D60228 /* LoginViewModel.swift in Sources */,
