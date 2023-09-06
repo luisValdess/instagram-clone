@@ -46,6 +46,7 @@
 		A0F253092AA6181D00E0FEF1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253082AA6181D00E0FEF1 /* ImageUploader.swift */; };
 		A0F2530C2AA6269200E0FEF1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A0F2530B2AA6269200E0FEF1 /* Kingfisher */; };
 		A0F2530E2AA6276000E0FEF1 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2530D2AA6276000E0FEF1 /* CircularProfileImageView.swift */; };
+		A0F253162AA7E38000E0FEF1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253152AA7E38000E0FEF1 /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		A0CF03B42A81AA4C000216FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0F253082AA6181D00E0FEF1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		A0F2530D2AA6276000E0FEF1 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		A0F253152AA7E38000E0FEF1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		A06AAD902AA3D16200D60228 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A08AD8202A872F81002AA822 /* PostGridView.swift */,
 				A08AD8012A81ADEA002AA822 /* ProfileView.swift */,
 				A08AD81C2A846E8B002AA822 /* CurrentProfileView.swift */,
 				A08AD8222A8734F8002AA822 /* ProfileHeaderView.swift */,
@@ -232,9 +235,8 @@
 		A08AD7F92A81ABA5002AA822 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				A08AD8062A81C877002AA822 /* FeedView.swift */,
-				A08AD8082A81C888002AA822 /* FeedCell.swift */,
-				A08AD8202A872F81002AA822 /* PostGridView.swift */,
+				A0F253132AA7E2E000E0FEF1 /* View */,
+				A0F253142AA7E2E600E0FEF1 /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -359,6 +361,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		A0F253132AA7E2E000E0FEF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A08AD8062A81C877002AA822 /* FeedView.swift */,
+				A08AD8082A81C888002AA822 /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0F253142AA7E2E600E0FEF1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0F253152AA7E38000E0FEF1 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -455,6 +474,7 @@
 				A08AD8272A87F957002AA822 /* UploadPostVM.swift in Sources */,
 				A08AD8112A844BF9002AA822 /* AddEmailView.swift in Sources */,
 				A08AD8212A872F81002AA822 /* PostGridView.swift in Sources */,
+				A0F253162AA7E38000E0FEF1 /* FeedViewModel.swift in Sources */,
 				A03EC76A2A915C0300ED1018 /* ContentViewModel.swift in Sources */,
 				A06AAD8F2AA03C4800D60228 /* EditProfileView.swift in Sources */,
 				A03EC76D2A91895E00ED1018 /* RegistrationViewModel.swift in Sources */,
