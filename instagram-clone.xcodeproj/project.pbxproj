@@ -49,6 +49,7 @@
 		A0F253162AA7E38000E0FEF1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253152AA7E38000E0FEF1 /* FeedViewModel.swift */; };
 		A0F253182AA809BC00E0FEF1 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253172AA809BC00E0FEF1 /* PostService.swift */; };
 		A0F2531C2AA8137100E0FEF1 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2531B2AA8137100E0FEF1 /* PostGridViewModel.swift */; };
+		A0F2531E2AAA929900E0FEF1 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2531D2AAA929900E0FEF1 /* FeedCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		A0F253152AA7E38000E0FEF1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		A0F253172AA809BC00E0FEF1 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		A0F2531B2AA8137100E0FEF1 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
+		A0F2531D2AAA929900E0FEF1 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F253152AA7E38000E0FEF1 /* FeedViewModel.swift */,
+				A0F2531D2AAA929900E0FEF1 /* FeedCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				A08AD8212A872F81002AA822 /* PostGridView.swift in Sources */,
 				A0F253162AA7E38000E0FEF1 /* FeedViewModel.swift in Sources */,
 				A03EC76A2A915C0300ED1018 /* ContentViewModel.swift in Sources */,
+				A0F2531E2AAA929900E0FEF1 /* FeedCellViewModel.swift in Sources */,
 				A0F253182AA809BC00E0FEF1 /* PostService.swift in Sources */,
 				A06AAD8F2AA03C4800D60228 /* EditProfileView.swift in Sources */,
 				A0F2531C2AA8137100E0FEF1 /* PostGridViewModel.swift in Sources */,
