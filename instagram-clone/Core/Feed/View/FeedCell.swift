@@ -11,6 +11,7 @@ import Kingfisher
 struct FeedCell: View {
     
     @ObservedObject var viewModel : FeedCellViewModel
+    @State private var showComments = false
     
     private var post: Post {
         return viewModel.post
@@ -59,7 +60,7 @@ struct FeedCell: View {
                 }
                 
                 Button {
-                    print("Comment a post")
+                    showComments.toggle()
                 } label: {
                     Image(systemName: "bubble.right")
                 }
@@ -100,6 +101,10 @@ struct FeedCell: View {
                 .padding(.leading, 10)
                 .foregroundColor(.gray)
                 .padding(.top, 1)
+        }
+        .sheet(isPresented: $showComments) {
+            CommentsView()
+                .presentationDragIndicator(.visible)
         }
     }
     
