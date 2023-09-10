@@ -10,8 +10,8 @@ import Firebase
 
 struct PostService {
     
-    private static let postCollection = Firestore.firestore().collection("posts")
-    private static let usersCollection = Firestore.firestore().collection("users")
+    private static let postCollection = FirebaseConstants.PostsCollection
+    private static let usersCollection = FirebaseConstants.UsersCollection
     
     static func fetchFeedPost() async throws -> [Post] {
         let snapshot = try await postCollection.getDocuments()

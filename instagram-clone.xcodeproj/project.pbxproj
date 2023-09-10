@@ -56,6 +56,8 @@
 		A0F2532B2AACBB9F00E0FEF1 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2532A2AACBB9F00E0FEF1 /* CommentsViewModel.swift */; };
 		A0F2532D2AACBBAD00E0FEF1 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2532C2AACBBAD00E0FEF1 /* CommentService.swift */; };
 		A0F2532F2AACCA2800E0FEF1 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2532E2AACCA2800E0FEF1 /* DeveloperPreview.swift */; };
+		A0F253312AAE280A00E0FEF1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253302AAE280900E0FEF1 /* Extensions.swift */; };
+		A0F253342AAE2CF400E0FEF1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253332AAE2CF400E0FEF1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,8 @@
 		A0F2532A2AACBB9F00E0FEF1 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		A0F2532C2AACBBAD00E0FEF1 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
 		A0F2532E2AACCA2800E0FEF1 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
+		A0F253302AAE280900E0FEF1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A0F253332AAE2CF400E0FEF1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F2532E2AACCA2800E0FEF1 /* DeveloperPreview.swift */,
+				A0F253302AAE280900E0FEF1 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 		A0CF03AC2A81AA4B000216FE /* instagram-clone */ = {
 			isa = PBXGroup;
 			children = (
+				A0F253322AAE2CE400E0FEF1 /* Utils */,
 				A08AD7F72A81AB73002AA822 /* App */,
 				A08AD7F32A81AB28002AA822 /* Core */,
 				A08AD7F42A81AB41002AA822 /* Extensions */,
@@ -461,6 +467,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		A0F253322AAE2CE400E0FEF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0F253332AAE2CF400E0FEF1 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -551,11 +565,13 @@
 				A08AD8022A81ADEA002AA822 /* ProfileView.swift in Sources */,
 				A08AD81D2A846E8B002AA822 /* CurrentProfileView.swift in Sources */,
 				A0CF03B02A81AA4B000216FE /* ContentView.swift in Sources */,
+				A0F253342AAE2CF400E0FEF1 /* Constants.swift in Sources */,
 				A06AAD932AA3D1CB00D60228 /* EditProfileViewModel.swift in Sources */,
 				A03EC7662A91581900ED1018 /* AuthService.swift in Sources */,
 				A06AAD892A9FFB5600D60228 /* UserService.swift in Sources */,
 				A08AD81F2A85CC6B002AA822 /* Post.swift in Sources */,
 				A08AD80F2A83268C002AA822 /* LoginView.swift in Sources */,
+				A0F253312AAE280A00E0FEF1 /* Extensions.swift in Sources */,
 				A0CF03AE2A81AA4B000216FE /* instagram_cloneApp.swift in Sources */,
 				A08AD8272A87F957002AA822 /* UploadPostVM.swift in Sources */,
 				A0F2532F2AACCA2800E0FEF1 /* DeveloperPreview.swift in Sources */,

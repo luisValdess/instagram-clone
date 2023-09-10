@@ -33,7 +33,7 @@ class UploadPostVM: ObservableObject {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         guard let uiImage = uiImage else { return }
         
-        let postRef = Firestore.firestore().collection("posts").document()
+        let postRef = FirebaseConstants.PostsCollection.document()
         guard let imageURL = try await ImageUploader.uploadImage(image: uiImage) else { return }
         let post = Post(id: postRef.documentID, ownerId: uid, caption: caption, likes: 0, imageUrl: imageURL, timestamp: Timestamp(), user: nil)
         guard let encodedPost = try? Firestore.Encoder().encode(post) else { return }

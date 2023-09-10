@@ -7,6 +7,7 @@
 
 import Firebase
 
+@MainActor
 class CommentsViewModel: ObservableObject {
     
     @Published var comments = [Comment]()
@@ -35,13 +36,11 @@ class CommentsViewModel: ObservableObject {
         try await fetchComments()
     }
     
-    @MainActor
     func fetchComments() async throws {
         self.comments = try await service.fetchComments()
         try await fetchUserDataForComments()
     }
     
-    @MainActor
     private func fetchUserDataForComments() async throws {
         for i in 0..<comments.count {
             let comment = comments[i]
