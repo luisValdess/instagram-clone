@@ -58,6 +58,7 @@
 		A0F2532F2AACCA2800E0FEF1 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2532E2AACCA2800E0FEF1 /* DeveloperPreview.swift */; };
 		A0F253312AAE280A00E0FEF1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253302AAE280900E0FEF1 /* Extensions.swift */; };
 		A0F253342AAE2CF400E0FEF1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253332AAE2CF400E0FEF1 /* Constants.swift */; };
+		A0F253362AAE4C6900E0FEF1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F253352AAE4C6900E0FEF1 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		A0F2532E2AACCA2800E0FEF1 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		A0F253302AAE280900E0FEF1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A0F253332AAE2CF400E0FEF1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0F253352AAE4C6900E0FEF1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				A06AAD922AA3D1CB00D60228 /* EditProfileViewModel.swift */,
+				A0F253352AAE4C6900E0FEF1 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				A0CF03AE2A81AA4B000216FE /* instagram_cloneApp.swift in Sources */,
 				A08AD8272A87F957002AA822 /* UploadPostVM.swift in Sources */,
 				A0F2532F2AACCA2800E0FEF1 /* DeveloperPreview.swift in Sources */,
+				A0F253362AAE4C6900E0FEF1 /* ProfileViewModel.swift in Sources */,
 				A08AD8112A844BF9002AA822 /* AddEmailView.swift in Sources */,
 				A08AD8212A872F81002AA822 /* PostGridView.swift in Sources */,
 				A0F253162AA7E38000E0FEF1 /* FeedViewModel.swift in Sources */,
