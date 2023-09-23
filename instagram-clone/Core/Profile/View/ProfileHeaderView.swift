@@ -121,7 +121,7 @@ struct ProfileHeaderView: View {
             
         }
         .navigationDestination(for: UserListConfig.self, destination: { config in
-            Text("Config")
+            UsersListView(config: config)
         })
         .onAppear(perform: {
             viewModel.checkUserIsFollowed()
